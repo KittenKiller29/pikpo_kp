@@ -45,13 +45,12 @@ namespace pikpo_kp
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -69,6 +68,15 @@ namespace pikpo_kp
             this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -76,6 +84,8 @@ namespace pikpo_kp
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -230,7 +240,7 @@ namespace pikpo_kp
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.panel1);
-            this.panel2.Location = new System.Drawing.Point(262, 73);
+            this.panel2.Location = new System.Drawing.Point(344, 72);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(258, 311);
             this.panel2.TabIndex = 6;
@@ -240,22 +250,21 @@ namespace pikpo_kp
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.button7);
-            this.panel3.Location = new System.Drawing.Point(-1, 405);
+            this.panel3.Location = new System.Drawing.Point(-2, 411);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(784, 112);
+            this.panel3.Size = new System.Drawing.Size(931, 112);
             this.panel3.TabIndex = 7;
             this.panel3.Visible = false;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel6.Controls.Add(this.button8);
             this.panel6.Controls.Add(this.numericUpDown1);
             this.panel6.Controls.Add(this.comboBox2);
             this.panel6.Controls.Add(this.comboBox1);
             this.panel6.Controls.Add(this.label8);
             this.panel6.Controls.Add(this.label9);
-            this.panel6.Controls.Add(this.textBox6);
-            this.panel6.Controls.Add(this.textBox5);
             this.panel6.Controls.Add(this.label5);
             this.panel6.Controls.Add(this.button6);
             this.panel6.Controls.Add(this.button5);
@@ -263,15 +272,26 @@ namespace pikpo_kp
             this.panel6.Controls.Add(this.button3);
             this.panel6.Controls.Add(this.button2);
             this.panel6.Controls.Add(this.textBox4);
-            this.panel6.Location = new System.Drawing.Point(-1, 1);
+            this.panel6.Location = new System.Drawing.Point(3, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(786, 109);
+            this.panel6.Size = new System.Drawing.Size(939, 109);
             this.panel6.TabIndex = 24;
             this.panel6.Visible = false;
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(792, 7);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(128, 43);
+            this.button8.TabIndex = 27;
+            this.button8.Text = "Документ";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(520, 27);
+            this.numericUpDown1.Location = new System.Drawing.Point(515, 27);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(247, 27);
             this.numericUpDown1.TabIndex = 26;
@@ -279,7 +299,7 @@ namespace pikpo_kp
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(264, 26);
+            this.comboBox2.Location = new System.Drawing.Point(262, 26);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(247, 28);
             this.comboBox2.TabIndex = 25;
@@ -299,7 +319,7 @@ namespace pikpo_kp
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(264, 3);
+            this.label8.Location = new System.Drawing.Point(262, 3);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(50, 20);
             this.label8.TabIndex = 22;
@@ -308,26 +328,11 @@ namespace pikpo_kp
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(520, 3);
+            this.label9.Location = new System.Drawing.Point(515, 3);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 20);
             this.label9.TabIndex = 23;
             this.label9.Text = "label9";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(520, 26);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(247, 27);
-            this.textBox6.TabIndex = 23;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(264, 26);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(247, 27);
-            this.textBox5.TabIndex = 22;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label5
             // 
@@ -341,7 +346,7 @@ namespace pikpo_kp
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(640, 56);
+            this.button6.Location = new System.Drawing.Point(793, 56);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(128, 43);
             this.button6.TabIndex = 12;
@@ -352,7 +357,7 @@ namespace pikpo_kp
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(448, 56);
+            this.button5.Location = new System.Drawing.Point(610, 56);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(128, 43);
             this.button5.TabIndex = 11;
@@ -364,7 +369,7 @@ namespace pikpo_kp
             // 
             this.button4.BackColor = System.Drawing.Color.White;
             this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(302, 56);
+            this.button4.Location = new System.Drawing.Point(406, 56);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(128, 43);
             this.button4.TabIndex = 10;
@@ -376,7 +381,7 @@ namespace pikpo_kp
             // 
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.Enabled = false;
-            this.button3.Location = new System.Drawing.Point(155, 56);
+            this.button3.Location = new System.Drawing.Point(212, 56);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(128, 43);
             this.button3.TabIndex = 9;
@@ -405,7 +410,7 @@ namespace pikpo_kp
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(263, 47);
+            this.button7.Location = new System.Drawing.Point(346, 47);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(258, 43);
             this.button7.TabIndex = 24;
@@ -425,7 +430,7 @@ namespace pikpo_kp
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(18, 53);
+            this.dataGridView1.Location = new System.Drawing.Point(180, 53);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -494,7 +499,7 @@ namespace pikpo_kp
             // 
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.textBox3);
-            this.panel5.Location = new System.Drawing.Point(549, 12);
+            this.panel5.Location = new System.Drawing.Point(696, 12);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(233, 393);
             this.panel5.TabIndex = 21;
@@ -504,19 +509,113 @@ namespace pikpo_kp
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(18, 20);
+            this.label10.Location = new System.Drawing.Point(179, 20);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(105, 28);
             this.label10.TabIndex = 21;
             this.label10.Text = "Таблица: ";
             this.label10.Visible = false;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(7, 5);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(128, 28);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Сортировка";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel4.Controls.Add(this.numericUpDown2);
+            this.panel4.Controls.Add(this.comboBox4);
+            this.panel4.Controls.Add(this.comboBox3);
+            this.panel4.Controls.Add(this.button9);
+            this.panel4.Controls.Add(this.checkBox3);
+            this.panel4.Controls.Add(this.label11);
+            this.panel4.Controls.Add(this.checkBox2);
+            this.panel4.Controls.Add(this.checkBox1);
+            this.panel4.Location = new System.Drawing.Point(10, 53);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(141, 331);
+            this.panel4.TabIndex = 26;
+            this.panel4.Visible = false;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(7, 227);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(128, 27);
+            this.numericUpDown2.TabIndex = 28;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(7, 152);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(128, 28);
+            this.comboBox4.TabIndex = 30;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(7, 76);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(128, 28);
+            this.comboBox3.TabIndex = 28;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(7, 273);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(128, 43);
+            this.button9.TabIndex = 28;
+            this.button9.Text = "Обновить";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(7, 197);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(101, 24);
+            this.checkBox3.TabIndex = 29;
+            this.checkBox3.Text = "checkBox3";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(7, 122);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(101, 24);
+            this.checkBox2.TabIndex = 28;
+            this.checkBox2.Text = "checkBox2";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(7, 46);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(101, 24);
+            this.checkBox1.TabIndex = 27;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(783, 517);
+            this.ClientSize = new System.Drawing.Size(930, 517);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
@@ -536,6 +635,9 @@ namespace pikpo_kp
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -567,8 +669,6 @@ namespace pikpo_kp
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
@@ -583,6 +683,16 @@ namespace pikpo_kp
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }
 
